@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockGo - B2B Dead-Stock & Near-Expiry Exchange Pitch</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Top Progress & Navigation Header -->
+    <header class="deck-header">
+        <div class="brand-logo">
+            <span class="logo-icon"><i class="fa-solid fa-boxes-packing"></i></span>
+            <span class="logo-text">Stock<span class="accent">Go</span></span>
+            <span class="tag-pill">B2B SaaS Pitch Deck</span>
+        </div>
+        <div class="slide-controls">
+            <button id="prevBtn" onclick="changeSlide(-1)"><i class="fa-solid fa-arrow-left"></i> Prev</button>
+            <span id="slideCounter">1 / 10</span>
+            <button id="nextBtn" onclick="changeSlide(1)">Next <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Presentation Container -->
+    <main class="deck-container">
+
+        <!-- ================= SLIDE 1: HERO COVER ================= -->
+        <section class="slide active" id="slide-1">
+            <div class="hero-card">
+                <div class="hero-badge"><i class="fa-solid fa-rocket"></i> Full-Stack Capstone & Startup Product Pitch
+                </div>
+                <h1 class="hero-title">Stock<span>Go</span></h1>
+                <p class="hero-subtitle">
+                    Pakistan’s First <strong>B2B Dead-Stock, Near-Expiry & Smart Barter Exchange</strong> Platform
+                </p>
+                <p class="hero-desc">
+                    Jis tarah <strong>inDrive</strong> ne rides mein "Fair Price Bidding" di, <strong>StockGo</strong>
+                    Pakistan ke Medical Stores, General Marts, Garments aur Wholesale Dealers ko apna phansa hua aur
+                    expire hota maal saste daamon bechne ya <strong>Maal-ke-badle-Maal (Barter)</strong> swap karne ka
+                    mahfooz digital rasta deta hai.
+                </p>
+
+                <div class="hero-highlights">
+                    <div class="mini-pill"><i class="fa-solid fa-shield-halved"></i> Shop KYC & Contact Masking</div>
+                    <div class="mini-pill"><i class="fa-solid fa-scale-balanced"></i> inDrive-Style 20% Price Floor Lock
+                    </div>
+                    <div class="mini-pill"><i class="fa-solid fa-repeat"></i> Smart Barter Value Calculator</div>
+                    <div class="mini-pill"><i class="fa-solid fa-key"></i> 4-Digit OTP Gate-Pass Inspection</div>
+                </div>
+
+                <div class="presenter-box" contenteditable="true" title="Click to edit your name">
+                    <div class="avatar-circle"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div>
+                        <h4>Presented By: [Abdul Samad]</h4>
+                        <p>Full-Stack Developer & Founder (MongoDB • Express.js • React • Node.js — MVC Architecture)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 2: MARKET GAPS & MODULE 1 ================= -->
+        <section class="slide" id="slide-2">
+            <div class="slide-top-bar">
+                <span class="step-badge">STEP 02 • PROBLEM & ONBOARDING</span>
+                <h2>Pakistan Market Ki 3 Asal Kamiyan (Gaps) & Shop KYC</h2>
+            </div>
+
+            <!-- Clean White Cards for 3 Gaps -->
+            <div class="grid-3">
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-store-slash"></i></div>
+                    <h3>Gap 1: Naya Maal vs Phansa Maal</h3>
+                    <p>Daraz, Bazaar aur OLX par sirf naya ya B2C maal bikta hai. Har medical store, mart aur garments
+                        shop par <strong>20%–30% sarmaya Dead-Stock ya Near-Expiry (2–3 months left)</strong> mein phans
+                        kar zaya ho jata hai.</p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>Gap 2: WhatsApp & Parchi Ka Dhoka</h3>
+                    <p>Abhi dukandar majboori mein WhatsApp groups ya kabariye ko <strong>70% nuqsan</strong> par maal
+                        dete hain. Wahan na koi price lock hota hai, na verification, aur har waqt fraud ka darr rehta
+                        hai.</p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>Gap 3: Cash Ki Tang-Dasti (Barter Gap)</h3>
+                    <p>Chotay dukandaron ke paas naya stock lene ke liye cash nahi hota. StockGo par woh bina cash diye,
+                        apni dukan ka ruka hua maal de kar doosre dukandar se apne kaam ka maal <strong>Barter
+                            Swap</strong> kar sakte hain.</p>
+                </div>
+            </div>
+
+            <!-- Module 1 Clean White Strip -->
+            <div class="emerald-strip-box">
+                <div class="strip-header">
+                    <i class="fa-solid fa-user-check"></i>
+                    <strong>Module 1: Verified Shopkeeper Onboarding, RBAC & Trust Engine</strong>
+                </div>
+                <div class="grid-4-mini">
+                    <div class="mini-white-item">
+                        <strong>1. 4-Role RBAC System</strong>
+                        <span>Admin, Verified Shopkeeper, Bulk Liquidator (Lot Buyer), & Pending User.</span>
+                    </div>
+                    <div class="mini-white-item">
+                        <strong>2. Shop KYC Upload</strong>
+                        <span>Dukandar apna Visiting Card, License ya Bill upload karega; Admin verify karega.</span>
+                    </div>
+                    <div class="mini-white-item">
+                        <strong>3. Contact Masking</strong>
+                        <span>Phone number aur dukan ka naam tab tak chupa rahega jab tak 2% fee pay na ho.</span>
+                    </div>
+                    <div class="mini-white-item">
+                        <strong>4. 3-Strike Fraud Ban</strong>
+                        <span>2 dafa kharab maal spot par reject hone par Seller account aur CNIC Blacklist!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 3: GLOBAL BENCHMARK vs STOCKGO ================= -->
+        <section class="slide" id="slide-3">
+            <div class="slide-top-bar">
+                <span class="step-badge">STEP 03 • GLOBAL VALIDATION</span>
+                <h2>America Ki Billion-Dollar Websites vs StockGo (4-in-1 Engine)</h2>
+            </div>
+
+            <div class="grid-4">
+                <div class="white-card">
+                    <span class="country-tag">USA • Dead-Stock</span>
+                    <h3><i class="fa-solid fa-boxes-stacked"></i> B-Stock.com</h3>
+                    <p>Amazon aur Walmart apna overstock aur return pallets B2B neelami (bidding) ke zariye chotay
+                        dealers ko bechte hain.</p>
+                </div>
+                <div class="white-card">
+                    <span class="country-tag">USA • Fixed Lots</span>
+                    <h3><i class="fa-solid fa-clipboard-list"></i> BULQ.com</h3>
+                    <p>Condition Grading (Grade A/B) aur Digital Manifest (Excel list) ke sath wholesale cartons fixed
+                        discount par bechta hai.</p>
+                </div>
+                <div class="white-card">
+                    <span class="country-tag">USA • Near-Expiry</span>
+                    <h3><i class="fa-solid fa-clock-rotate-left"></i> SpoilerAlert</h3>
+                    <p>Nestlé aur Kraft Heinz apna 30–90 din ki expiry wala grocery/FMCG stock dynamic price drop ke
+                        sath clear karte hain.</p>
+                </div>
+                <div class="white-card">
+                    <span class="country-tag">USA • B2B Barter</span>
+                    <h3><i class="fa-solid fa-arrows-spin"></i> BizX & ITEX</h3>
+                    <p>Businesses bina cash diye apna phansa hua stock de kar doosri dukan se apne kaam ka maal Barter
+                        swap karte hain.</p>
+                </div>
+            </div>
+
+            <div class="comparison-banner">
+                <div class="comp-left">
+                    <h4><i class="fa-solid fa-globe"></i> America Mein Kya Hai?</h4>
+                    <p>Wahan Dead-Stock, Near-Expiry, aur Barter ke liye <strong>alag-alag websites</strong> hain aur
+                        sirf poore Truckloads bikte hain.</p>
+                </div>
+                <div class="comp-divider"><i class="fa-solid fa-bolt"></i></div>
+                <div class="comp-right">
+                    <h4><i class="fa-solid fa-star"></i> StockGo (Pakistan) Mein Kya Khaas Hai?</h4>
+                    <p>Hum ne in charon models ko <strong>ek hi platform (StockGo)</strong> mein jor diya hai, jahan
+                        local dukandar <strong>10 cartons</strong> bhi Cash ya Barter par nikaal sakta hai!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 4: INSTRUCTOR Q1 (SUPPLIER RETURN) ================= -->
+        <section class="slide" id="slide-4">
+            <div class="question-hero-banner">
+                <div class="q-badge"><i class="fa-solid fa-circle-question"></i> INSTRUCTOR QUESTION #01</div>
+                <h2>"Dukandar wapas Supplier ya Company ko maal kyun nahi de deta?"</h2>
+                <p class="q-short-ans">
+                    <strong>Market Fact:</strong> Pakistan ki wholesale markets (Bolton Market, Shah Alam, Medicine &
+                    Garments) mein <strong>80% se 90% maal "Strict No-Return / One-Way Sale" policy</strong> par bikta
+                    hai!
+                </p>
+            </div>
+
+            <div class="grid-4">
+                <div class="white-card green-border-top">
+                    <div class="num-circle">01</div>
+                    <h3>Imported & Wholesale Lots</h3>
+                    <p>China, Dubai ya local wholesale markets se aane wale Electronics, Cosmetics, Garments aur
+                        Accessories ka koi official distributor nahi hota—woh 100% <strong>"Bika Hua Maal Wapas Nahi
+                            Hoga"</strong> ki parchi par milta hai.</p>
+                </div>
+
+                <div class="white-card green-border-top">
+                    <div class="num-circle">02</div>
+                    <h3>Bulk Scheme / Target Stock</h3>
+                    <p>Companies dukandar ko lalach deti hain ke <em>"100 cartons uthao to 15% extra scheme milegi,
+                            magar yeh stock Non-Returnable hoga."</em> 60 cartons bik jate hain aur 40 dukan ke godam
+                        mein phans jate hain.</p>
+                </div>
+
+                <div class="white-card green-border-top">
+                    <div class="num-circle">03</div>
+                    <h3>25% Katoti & 6-Month Delay</h3>
+                    <p>Jo ginti ki companies near-expiry wapas leti bhi hain, woh <strong>25% deduction</strong> karti
+                        hain aur cash dene ke bajaye 6 mahine baad credit note deti hain, jabke dukandar ko aaj cash ya
+                        chalta hua maal chahiye.</p>
+                </div>
+
+                <div class="white-card green-border-top">
+                    <div class="num-circle">04</div>
+                    <h3>Shop Closure / Category Shift</h3>
+                    <p>Jab koi dukandar apni dukan band kar raha ho ya winter se summer stock par shift ho raha ho, to
+                        pichle saal ke suppliers maal wapas nahi lete—StockGo un ka wahid sahara hai.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 5: INSTRUCTOR Q2 (DEFECTIVE / FAKE STOCK) ================= -->
+        <section class="slide" id="slide-5">
+            <div class="question-hero-banner">
+                <div class="q-badge"><i class="fa-solid fa-shield-virus"></i> INSTRUCTOR QUESTION #02</div>
+                <h2>"Kya pata Seller kharab, toota hua ya nakli (Defective) maal de de?"</h2>
+                <p class="q-short-ans">
+                    <strong>Technical Solution (Modules 2 & 6):</strong> StockGo mein <strong>4-Layer "Zero-Fraud
+                        Inspection & OTP Gate-Pass Engine"</strong> laga hai—jab tak Buyer apni aankhon se maal check
+                    kar ke Secret OTP na de, deal mukammal hi nahi hoti!
+                </p>
+            </div>
+
+            <div class="grid-4">
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h3>1. Live Batch & Expiry Photo</h3>
+                    <p>Seller Google se uthayi hui fake photo nahi laga sakta. React form mein usay carton par छपे
+                        <strong>Batch Number, Mfg Date aur Expiry Date</strong> ki asli clear photo upload karni hogi.
+                    </p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-tags"></i></div>
+                    <h3>2. Quality Condition Grading</h3>
+                    <p>Seller ko qanooni taur par Grade chunna hoga:<br>
+                        🟢 <strong>Grade A:</strong> 100% Factory Sealed Carton.<br>
+                        🟡 <strong>Grade B:</strong> Minor Box Damage (Andar se product bilkul theek).</p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-key"></i></div>
+                    <h3>3. 4-Digit Secret OTP Gate-Pass</h3>
+                    <p>Buyer online Seller ko paise nahi deta. Woh <strong>Digital PDF Gate-Pass</strong> le kar dukan
+                        par jata hai, cartons khol kar check karta hai, aur tasalli hone par apna <strong>4-Digit
+                            OTP</strong> Seller ko deta hai.</p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-gavel"></i></div>
+                    <h3>4. Spot Reject & Instant Refund</h3>
+                    <p>Agar maal photo se mukhtalif ya kharab nikle, to Buyer wahin <strong>"Reject Defective
+                            Stock"</strong> click karega—Buyer ki 2% wallet fee foran refund hogi aur Seller ko
+                        <strong>Fraud Strike</strong> lag jayegi!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 6: INSTRUCTOR Q3 (IF STOCK DOESN'T SELL) ================= -->
+        <section class="slide" id="slide-6">
+            <div class="question-hero-banner">
+                <div class="q-badge"><i class="fa-solid fa-fire-flame-curved"></i> INSTRUCTOR QUESTION #03</div>
+                <h2>"Agar dukandar ki cheez StockGo par bhi Sell na ho to phir kya hoga?"</h2>
+                <p class="q-short-ans">
+                    <strong>Technical Solution (Module 4):</strong> StockGo par maal ruka nahi rehta! Hamara Backend
+                    Cron-Job <strong>"3-Stage Auto-Clearance Rescue Funnel"</strong> har hafte khud-ba-khud agla step
+                    trigger karta hai:
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <div class="white-card funnel-card">
+                    <div class="funnel-step">STAGE 01 • DAY 7 TRIGGER</div>
+                    <h3><i class="fa-solid fa-bell"></i> Auto Price-Drop & Push Alert</h3>
+                    <p>Agar 7 din tak kisi lot par offer na aaye, to system Seller ko 1-click <strong>+10% Extra
+                            Discount</strong> ka prompt deta hai aur us shehar ke 50 dukandaron ko <strong>"🔥 Hot Price
+                            Drop Alert"</strong> bhej kar feed ke top par le aata hai.</p>
+                </div>
+
+                <div class="white-card funnel-card">
+                    <div class="funnel-step">STAGE 02 • DAY 10 TRIGGER</div>
+                    <h3><i class="fa-solid fa-right-left"></i> Auto-Barter Priority Mode</h3>
+                    <p>Aksar maal cash na hone ki wajah se rukta hai. 10 din baad system us lot par <strong>"Barter Open
+                            — 0% Cash Needed"</strong> ka green highlight badge laga deta hai taake doosre dukandar apne
+                        ruke hue maal se foran adla-badli kar lein.</p>
+                </div>
+
+                <div class="white-card funnel-card">
+                    <div class="funnel-step">STAGE 03 • <15 DAYS LEFT</div>
+                            <h3><i class="fa-solid fa-truck-ramp-box"></i> Bulk Liquidator Flash Pool</h3>
+                            <p>Jab expiry mein sirf 15 din reh jayein, to lot <strong>60%–75% Off Flash Pool</strong>
+                                mein chali jati hai jahan <strong>Itwar Bazaar, Landa Market aur Village
+                                    Wholesalers</strong> usay foran utha lete hain. 100% nuqsan ke bajaye 35% cash
+                                wapas!</p>
+                    </div>
+                </div>
+
+                <div class="zero-fee-bar">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>100% Free Listing Guarantee ("No Sale, No Fee"):</strong> StockGo par maal lagane ki koi fee
+                    nahi hai. Agar kisi wajah se deal na bhi ho, to dukandar ki jeb se ek rupya bhi kharch nahi hota!
+                </div>
+        </section>
+
+        <!-- ================= SLIDE 7: INDRIVE FAIR PRICE LOCK & BARTER MATH ================= -->
+        <section class="slide" id="slide-7">
+            <div class="slide-top-bar">
+                <span class="step-badge">STEP 07 • MODULE 3 CORE LOGIC</span>
+                <h2>"inDrive-Style" Fair Price Floor Lock & Smart Barter Calculator</h2>
+            </div>
+
+            <div class="grid-2">
+                <!-- Left: inDrive Price Lock -->
+                <div class="white-card">
+                    <h3><i class="fa-solid fa-lock"></i> 1. Seller Guidance & Buyer 20% Floor Lock</h3>
+                    <p>Jis tarah <strong>inDrive</strong> mein gahak mazaq wali kam qeemat nahi likh sakta, StockGo ka
+                        backend Seller aur Buyer dono par Fair Price Lock lagata hai:</p>
+                    <ul class="clean-list">
+                        <li>🔵 <strong>Dead-Stock (No Expiry):</strong> System suggests 15% – 35% Discount.</li>
+                        <li>🟡 <strong>Urgent Expiry (30–90 Days):</strong> System suggests 30% – 50% Discount.</li>
+                        <li>🔴 <strong>Critical Expiry (<30 Days):</strong> System suggests 50% – 70% Discount.</li>
+                    </ul>
+                    <div class="code-preview-box">
+                        <strong>Buyer Quick Bid Buttons (Asking Price: PKR 70,000):</strong>
+                        <div class="bid-pills">
+                            <span>-5% (66,500)</span>
+                            <span>-10% (63,000)</span>
+                            <span>-15% (59,500)</span>
+                            <span class="locked-pill">-20% Floor Lock (56,000 🔒)</span>
+                        </div>
+                        <small>⚠️ PKR 56,000 se kam likhne par "Submit Offer" button disable ho jata hai!</small>
+                    </div>
+                </div>
+
+                <!-- Right: Barter Math -->
+                <div class="white-card">
+                    <h3><i class="fa-solid fa-calculator"></i> 2. Dual Engine: Cash Bid vs Barter Swap Math</h3>
+                    <p>Agar Buyer ke paas cash nahi hai, to woh <strong>"Offer Barter Swap"</strong> select kar ke apni
+                        dukan ki lot lagata hai aur Express Controller khud hisab barabar karta hai:</p>
+                    <div class="barter-math-box">
+                        <div class="math-row">
+                            <span>Seller Lot Value (50 Cartons Shampoo):</span>
+                            <strong>PKR 1,00,000</strong>
+                        </div>
+                        <div class="math-row">
+                            <span>Buyer Swap Lot (40 Cartons Soap):</span>
+                            <strong>PKR 85,000</strong>
+                        </div>
+                        <div class="math-row result-row">
+                            <span>Auto-Calculated Difference (Top-Up Cash):</span>
+                            <strong>Buyer Pays PKR 15,000 Cash + Stock</strong>
+                        </div>
+                    </div>
+                    <p class="note-text"><i class="fa-solid fa-circle-info"></i> Barter mein bhi Buyer ki lot kam az kam
+                        80% value ki honi zaroori hai.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 8: WALLET & MONETIZATION ================= -->
+        <section class="slide" id="slide-8">
+            <div class="slide-top-bar">
+                <span class="step-badge">STEP 08 • MODULE 5 MONETIZATION</span>
+                <h2>StockGo Prepaid Wallet, Contact Masking & 2% Deal Unlocker</h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-eye-slash"></i></div>
+                    <h3>1. Contact Masking Middleware</h3>
+                    <p>Marketplace par har dukan ka naam aur phone number chupa hota hai (e.g., <em>"Verified Medical
+                            Store - Gulshan, Karachi"</em>) taake Buyer aur Seller website se bahar rabta kar ke
+                        commission chori na kar sakein.</p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>2. Prepaid StockGo Wallet</h3>
+                    <p>Har dukandar ke navbar mein <strong>Wallet Balance</strong> hota hai. Woh Dummy Card (Stripe
+                        Test) ya <strong>JazzCash / Raast / EasyPaisa</strong> screenshot upload kar ke balance mangwata
+                        hai jisay Admin 1-click mein approve karta hai.</p>
+                </div>
+
+                <div class="white-card">
+                    <div class="card-icon"><i class="fa-solid fa-unlock-keyhole"></i></div>
+                    <h3>3. 2% Fee Lock & Reveal</h3>
+                    <p>Jab Seller offer <strong>Accept</strong> karta hai, to deal <code>Awaiting Commission</code> ho
+                        jati hai. Jaise hi Wallet se <strong>2% Fee</strong> kat'ti hai, dono ko Phone Number, WhatsApp
+                        button, Shop Map aur <strong>PDF Gate-Pass</strong> mil jata hai!</p>
+                </div>
+            </div>
+
+            <div class="emerald-strip-box">
+                <div class="strip-header">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <strong>3-Stream Revenue Model (Platform Paise Kaise Kamayega?)</strong>
+                </div>
+                <div class="grid-3-mini">
+                    <div class="mini-white-item">
+                        <strong>Stream 1: 2% Success Commission</strong>
+                        <span>Har Cash ya Barter deal unlock hone par 2% wallet deduction.</span>
+                    </div>
+                    <div class="mini-white-item">
+                        <strong>Stream 2: Featured Urgent Boost</strong>
+                        <span>PKR 500 de kar apni near-expiry lot ko homepage ke top par dikhana.</span>
+                    </div>
+                    <div class="mini-white-item">
+                        <strong>Stream 3: Pro Wholesaler SaaS Plan</strong>
+                        <span>PKR 3,000/month subscription baray distributors aur bulk lot buyers ke liye.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 9: MVC ARCHITECTURE & 6-PART ROADMAP ================= -->
+        <section class="slide" id="slide-9">
+            <div class="slide-top-bar">
+                <span class="step-badge">STEP 09 • TECHNICAL ARCHITECTURE</span>
+                <h2>Zero-Breakage Modular MVC Folder Structure & 5-Month Plan</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="white-card">
+                    <h3><i class="fa-solid fa-folder-tree"></i> Modular MERN Stack (Har Feature Alag File Mein)</h3>
+                    <p>Taake AI ya khud code likhte waqt purana code ya UI kabhi kharab na ho:</p>
+                    <ul class="clean-list">
+                        <li><strong>4 MongoDB Models (<code>/models</code>):</strong> <code>User.js</code> (Shop + KYC +
+                            Wallet), <code>Listing.js</code> (Stock + Expiry + Grade), <code>Proposal.js</code> (Cash
+                            Bids + Barter Math + OTP), <code>Transaction.js</code> (Wallet Logs).</li>
+                        <li><strong>Isolated Utils (<code>/utils</code>):</strong> <code>fairPriceCalculator.js</code>,
+                            <code>expiryBadgeEngine.js</code>, <code>barterMatcher.js</code>.
+                        </li>
+                        <li><strong>Middlewares (<code>/middlewares</code>):</strong> <code>authJWT.js</code>,
+                            <code>roleCheck.js</code>, <code>maskContact.js</code>.
+                        </li>
+                        <li><strong>Module 7 Dashboards:</strong> Shopkeeper Analytics (Capital Recovered, Active Lots)
+                            + Admin Control Panel.</li>
+                    </ul>
+                </div>
+
+                <div class="white-card">
+                    <h3><i class="fa-solid fa-calendar-check"></i> 6-Part Vertical Slice Build Plan (4–5 Months)</h3>
+                    <div class="timeline-list">
+                        <div class="t-item"><strong>Part 1 (Month 1):</strong> Shop Registration, Visiting Card KYC &
+                            Admin Approval.</div>
+                        <div class="t-item"><strong>Part 2 (Month 1–2):</strong> Stock Listing Form, Live Batch Photo &
+                            Expiry Urgency Badges.</div>
+                        <div class="t-item"><strong>Part 3 (Month 2–3):</strong> inDrive-Style Cash Bidding & 20%
+                            Minimum Price Floor Lock.</div>
+                        <div class="t-item"><strong>Part 4 (Month 3–4):</strong> Barter Swap Engine & Top-Up Cash Value
+                            Matcher.</div>
+                        <div class="t-item"><strong>Part 5 (Month 4):</strong> StockGo Prepaid Wallet, Contact Masking &
+                            2% Unlocker.</div>
+                        <div class="t-item"><strong>Part 6 (Month 5):</strong> PDF Gate-Pass, 4-Digit OTP Inspection &
+                            3-Stage Rescue Cron.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 10: MARKET ROLLOUT & 5-YEAR VISION ================= -->
+        <section class="slide" id="slide-10">
+            <div class="slide-top-bar">
+                <span class="step-badge">STEP 10 • GO-TO-MARKET & 5-YEAR ROADMAP</span>
+                <h2>Mashhoor Hone Ka Tareeqa (Rollout) & 5-Year Startup Vision</h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="white-card">
+                    <span class="phase-pill">PHASE 1 • MONTHS 1 TO 6</span>
+                    <h3><i class="fa-solid fa-seedling"></i> Core MVP & First 50 Shops</h3>
+                    <p>Karachi/Lahore ki ek wholesale market (Medicine ya Grocery) ke pehle 50 dukandaron ko <strong>PKR
+                            5,000 Free Wallet Bonus Credits</strong> de kar onboard karna. Tamam 7 core modules live
+                        honge.</p>
+                </div>
+
+                <div class="white-card">
+                    <span class="phase-pill">PHASE 2 • YEARS 1 TO 2</span>
+                    <h3><i class="fa-solid fa-robot"></i> AI Automation & Logistics</h3>
+                    <p><strong>AI Barter Recommendation Engine</strong> (jo khud match dhoonde), In-App Encrypted Chat
+                        Room, Dynamic Pricing AI, aur <strong>TCS / Leopards B2B Cargo API</strong> integration.</p>
+                </div>
+
+                <div class="white-card">
+                    <span class="phase-pill">PHASE 3 • YEARS 3 TO 5</span>
+                    <h3><i class="fa-solid fa-building-columns"></i> Enterprise & Fintech Scale</h3>
+                    <p>Bari markets mein <strong>Multi-City Transit Hubs</strong>, chotay dukandaron ke liye
+                        <strong>Inventory Micro-Loans (Fintech)</strong>, Official Brand Clearance Portals
+                        (Unilever/Daraz), aur Live Wholesale Auctions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="final-cta-banner">
+                <h3><i class="fa-solid fa-circle-check"></i> Ready to Start Part 1 (Database Models & Shop KYC)</h3>
+                <p>StockGo solves a real multi-billion rupee retail leakage problem in Pakistan with solid backend
+                    engineering.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Simple JS for Slide Switching -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+        const counter = document.getElementById("slideCounter");
+
+        function showSlide(index) {
+            slides.forEach((s, i) => {
+                s.classList.toggle("active", i === index);
+            });
+            counter.textContent = `${index + 1} / ${slides.length}`;
+        }
+
+        function changeSlide(step) {
+            currentSlide = (currentSlide + step + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowRight") changeSlide(1);
+            if (e.key === "ArrowLeft") changeSlide(-1);
+        });
+    </script>
+
+</body>
+
+</html>
